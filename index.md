@@ -11,7 +11,7 @@ Nmap offers many different types of scans that can be used to obtain various res
 *  Service enumeration & detection
 *  OS detection
 
-## What you'll learn:
+## What you'll learn here:
 
 *  Understanding basic Nmap scanning techniques.
 *  Identifying open ports & running services.
@@ -87,32 +87,6 @@ Additionally if you would like to check the version of the service running on a 
 > Purpose: The `-A` option combines multiple techniques, including OS detection, version detection, script scanning, and traceroute.
 
 These are just a few of the many many ways you can conduct a scan, The tables below includes more ways you can use Nmap:
-
-### Target Specification
-
-| Switch       | Example                       | Description               |
-|:-------------|:------------------------------|:--------------------------|
-|              | nmap 192.168.1.1 192.168.2.1  | Scan specific IPs         |
-|              | nmap 192.168.1.0/24           | Scan using CIDR notation  |
-|              | nmap 192.168.1.1-254          | Scan a range              |
-|              | nmap scanme.nmap.org          | Scan a domain             |
-
-### Scan Techniques
-
-| Switch       | Example              | Description                 |
-|:-------------|:---------------------|:----------------------------|
-| -sS          | nmap -sS 192.168.1.1 | TCP SYN port scan (Default) |
-| -sU          | nmap -sU 192.168.1.1 | UDP port scan               |
-
-### Host Discovery
-
-| Switch       | Example                       | Description                                 |
-|:-------------|:------------------------------|:--------------------------------------------|
-| -sn          | nmap -sn 192.168.1.1/24       | Disable port scanning. Host discovery only. |
-|              | nmap -Pn 192.168.1.1-5        | Disable host discovery. Port scan only.     |
-| -PR          | nmap -PR 192.168.1.1-1/24     | ARP discovery on local network              |
-| -n           | nmap -n 192.168.1.1           | Never do DNS resolution                     |
-|              | nmap scanme.nmap.org          | Scan a domain                               |
 
 As stated before there are many more (complex) ways to use Nmap, this is just a beginners guide to get you a bit more familar with the tool and understand the basics of how to use Nmap.
 
