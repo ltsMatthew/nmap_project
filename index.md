@@ -97,6 +97,13 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 |              | nmap 192.168.1.1-254          | Scan a range              |
 |              | nmap scanme.nmap.org          | Scan a domain             |
 
+### Scan Techniques
+
+| Switch       | Example              | Description                 |
+|:-------------|:---------------------|:----------------------------|
+| -sS          | nmap -sS 192.168.1.1 | TCP SYN port scan (Default) |
+| -sU          | nmap -sU 192.168.1.1 | UDP port scan               |
+
 As stated before there are many more (complex) ways to use Nmap, this is just a beginners guide to get you a bit more familar with the tool and understand the basics of how to use Nmap.
 
 If you would like a more in depth guide to Nmap (which includes: Firewall/IDS/IPS Evasion, Host Discovery, NSE Scripts, etc...) I recommend checking the course on HackTheBox Academy, its completely free! Just sign up and you're ready to go!
