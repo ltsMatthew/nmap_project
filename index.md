@@ -25,11 +25,13 @@ Before following this guide, you should have a basic understanding of:
 This guide focuses only on using Nmap for network scanning. If you're unfamiliar with the above topics, you may want to review them first to get the most out of this guide.
 
 _Also_ make sure you have Nmap installed on the machine you're using, You can install it on a Linux system by running the below in the terminal:
->$ sudo apt install nmap
->
+```
+$ sudo apt install nmap
+```
 >or
->
+```
 >$ sudo apt-get install nmap
+```
 
 ## What This Guide Covers:
 
