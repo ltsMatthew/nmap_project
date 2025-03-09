@@ -112,38 +112,38 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 
 ### Target Specification
 
-| Option       | Example                      | Description               |
-|:-------------|:-----------------------------|:--------------------------|
-|              | nmap 192.168.1.1 192.168.2.1 | Scan specific IPs         |
-|              | nmap 192.168.1.0/24          | Scan using CIDR notation  |
-|              | nmap 192.168.1.1-254         | Scan a range              |
-|              | nmap scanme.nmap.org         | Scan a domain             |
+| Option        | Example                         | Description                  |
+|:--------------|:--------------------------------|:-----------------------------|
+|               | nmap 192.168.1.1 192.168.2.1    | Scan specific IPs            |
+|               | nmap 192.168.1.0/24             | Scan using CIDR notation     |
+|               | nmap 192.168.1.1-254            | Scan a range                 |
+|               | nmap scanme.nmap.org            | Scan a domain                |
 
 ### Scan Techniques
 
-| Option      | Example              | Description                 |
-|:------------|:---------------------|:----------------------------|
-| -sS         | nmap -sS 192.168.1.1 | TCP SYN port scan (Default) |
-| -sU         | nmap -sU 192.168.1.1 | UDP port scan               |
+| Option        | Example                         | Description                  |
+|:--------------|:--------------------------------|:-----------------------------|
+| -sS           | nmap -sS 192.168.1.1            | TCP SYN port scan (Default)  |
+| -sU           | nmap -sU 192.168.1.1            | UDP port scan                |
 
 ### Host Discovery
 
-| Option      | Example                   | Description                                 |
-|:------------|:--------------------------|:--------------------------------------------|
-| -sn         | nmap -sn 192.168.1.1/24   | Disable port scanning. Host discovery only. |
-|             | nmap -Pn 192.168.1.1-5    | Disable host discovery. Port scan only.     |
-| -PR         | nmap -PR 192.168.1.1-1/24 | ARP discovery on local network              |
-| -n          | nmap -n 192.168.1.1       | Never do DNS resolution                     |
-|             | nmap scanme.nmap.org      | Scan a domain                               |
+| Option      | Example                          | Description                                 |
+|:------------|:---------------------------------|:--------------------------------------------|
+| -sn         | nmap -sn 192.168.1.1/24          | Disable port scanning. Host discovery only. |
+|             | nmap -Pn 192.168.1.1-5           | Disable host discovery. Port scan only.     |
+| -PR         | nmap -PR 192.168.1.1-1/24        | ARP discovery on local network              |
+| -n          | nmap -n 192.168.1.1              | Never do DNS resolution                     |
+|             | nmap scanme.nmap.org             | Scan a domain                               |
 
 ### Port Specification
 
-| Option      | Example                    | Description                |
-|:------------|:---------------------------|:---------------------------|
-| -p          | nmap -p 21 192.168.1.1     | Port scan for port x       |
-| -p          | nmap -p 21-100 192.168.1.1 | Port range                 |
-| -p-         | nmap -p- 192.168.1.1       | Port scan all ports        |
-| -F          | nmap -F 192.168.1.1        | Fast port scan (100 ports) |
+| Option      | Example                          | Description                |
+|:------------|:---------------------------------|:---------------------------|
+| -p          | nmap -p 21 192.168.1.1           | Port scan for port x       |
+| -p          | nmap -p 21-100 192.168.1.1       | Port range                 |
+| -p-         | nmap -p- 192.168.1.1             | Port scan all ports        |
+| -F          | nmap -F 192.168.1.1              | Fast port scan (100 ports) |
 
 ### Service, OS & Version Detection
 
@@ -169,7 +169,7 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 ### Output
 
 | Option      | Example                         | Description                                                       |
-|:------------|:--------------------------- ----|:------------------------------------------------------------------|
+|:------------|:--------------------------------|:------------------------------------------------------------------|
 | -oN         | nmap 192.168.1.1 -oN output.txt | Normal output to the file output.txt                              |
 | -v          | nmap -v 192.168.1.1             | Increase the verbosity level (use -vv or more for greater effect) |
 | -open       | nmap -open 192.168.1.1          | Only show open (or possibly open) ports                           |
