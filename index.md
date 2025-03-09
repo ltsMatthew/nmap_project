@@ -79,24 +79,24 @@ Here are some more examples on how you can use Nmap (take note of the command Sy
 
 ### 2. Service and Version Detection
 
-![NmapServiceVersionDetection](NmapServiceVersionDetection1.png)
+![NmapServiceVersionDetection](nmapServiceVersionDetection1.png)
 
 > Purpose: The `-sV` option detects the versions of services running on open ports. This helps in vulnerability assessment.
 
 Additionally if you would like to check the version of the service running on a specific port (in this example we using port 22 which is SSH) you can do the below command:
 
-![NmapServiceVersionDetectionSSH](NmapServiceVersionDetectionSSH1.png)
+![NmapServiceVersionDetectionSSH](nmapServiceVersionDetectionSSH1.png)
 
 ### 3. Operating System Detection
 
-![NmapOSdetection](NmapOSdetection1.png)
+![NmapOSdetection](nmapOSdetection1.png)
 
 > Purpose: The `-O` option specifies the nmap command to determine the OS running on the target based on response fingerprints.
 
 ### 4. Aggressive Scan (All-in-One)
 
-![NmapAllinfo1_enhanced](NmapAllinfo1_enhanced.png)
-![NmapAllinfo2_enhanced](NmapAllinfo2_enhanced.png)
+![NmapAllinfo1_enhanced](nmapAllinfo1_enhanced.png)
+![NmapAllinfo2_enhanced](nmapAllinfo2_enhanced.png)
 
 > Purpose: The `-A` option combines multiple techniques, including OS detection, version detection, script scanning, and traceroute.
 
