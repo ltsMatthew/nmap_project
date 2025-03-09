@@ -28,7 +28,7 @@ _Also_ make sure you have Nmap installed on the machine you're using, You can in
 ```
 $ sudo apt install nmap
 ```
->or
+or
 ```
 $ sudo apt-get install nmap
 ```
