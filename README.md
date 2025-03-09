@@ -11,4 +11,6 @@ Before following this guide, you should have a basic understanding of:
 *  Operating systems (basic Linux or Windows command-line usage).
 *  Security concepts (understanding what open ports and services mean).
 
-⚠️ Disclaimer: This guide is intended for educational and ethical purposes only. Unauthorized scanning of networks or systems that you do not own or have explicit permission to test may be illegal and could result in serious consequences. Always ensure you have proper authorization before using Nmap
+
+
+⚠️ Disclaimer: This guide is intended for educational and ethical purposes only. Unauthorized scanning of networks or systems that you do not own or have explicit permission to test may be illegal and could result in serious consequences. Always ensure you have proper authorization before using Nmap.
