@@ -19,10 +19,15 @@ Some of the features of Nmap can be divided into the following scanning techniqu
 Before following this guide, you should have a basic understanding of:
 
 *  Networking fundamentals (IP addresses, subnets, and ports).
-*  Operating systems (basic Linux or Windows command-line usage).
+*  Basic Linux command-line usage.
 *  Security concepts (understanding what open ports and services mean).
 
 This guide focuses only on using Nmap for network scanning. If you're unfamiliar with the above topics, you may want to review them first to get the most out of this guide.
+
+**Also** make sure you have Nmap installed on the machine you're using, You can install it on a Linux system by running the below in the terminal:
+>$sudo apt install nmap
+>or
+>sudo apt-get install nmap
 
 ## What This Guide Covers:
 
