@@ -30,9 +30,8 @@ $ sudo apt install nmap
 ```
 >or
 ```
->$ sudo apt-get install nmap
+$ sudo apt-get install nmap
 ```
-
 ## What This Guide Covers:
 
 *  Understanding basic Nmap scanning techniques.
