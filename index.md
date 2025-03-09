@@ -85,7 +85,7 @@ Here are some more examples on how you can use Nmap (take note of the command Sy
 
 Additionally if you would like to check the version of the service running on a specific port (in this example we using port 22 which is SSH) you can do the below command:
 
-![NmapServiceVersionDetectionSSH](nmapServiceVersionDetectionSSH1.png)
+
 
 ### 3. Operating System Detection
 
