@@ -26,7 +26,9 @@ This guide focuses only on using Nmap for network scanning. If you're unfamiliar
 
 **Also** make sure you have Nmap installed on the machine you're using, You can install it on a Linux system by running the below in the terminal:
 >$sudo apt install nmap
+
 >or
+
 >sudo apt-get install nmap
 
 ## What This Guide Covers:
