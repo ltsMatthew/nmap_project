@@ -48,7 +48,7 @@ This guide focuses only on using Nmap for network scanning. If you're unfamiliar
 
 This section details the step-by-step approach for using Nmap.
 
-**Disclaimer**: This guide is intended for `educational and ethical purposes only`. Unauthorized scanning of networks or systems that you do not own or have explicit permission to test may be illegal and could result in serious consequences. Always ensure you have proper authorization before using Nmap.
+**DISCLAIMER**: This guide is intended for `educational and ethical purposes only`. Unauthorized scanning of networks or systems that you do not own or have explicit permission to test may be illegal and could result in serious consequences. Always ensure you have proper authorization before using Nmap.
 
 ### Syntax
 
