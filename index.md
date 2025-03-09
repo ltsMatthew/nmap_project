@@ -4,14 +4,27 @@ layout: default
 
 _Created by Matthew Adriaanzen_
 
-Nmap offers many different types of scans that can be used to obtain various results about our targets. Some of the features of Nmap can be divided into the following scanning techniques:
+Nmap is a network scanner created by Gordon Lyon. its used to discover hosts and services on a computer network by sending packets and analyzing the responses.
+
+It provides a number of features for probing computer networks, including host discovery and service and operating system detection.
+
+Some of the features of Nmap can be divided into the following scanning techniques:
 
 *  Host discovery
 *  Port scanning
 *  Service enumeration & detection
 *  OS detection
 
-## What you'll learn here:
+## Prerequisites
+Before following this guide, you should have a basic understanding of:
+
+*  Networking fundamentals (IP addresses, subnets, and ports).
+*  Operating systems (basic Linux or Windows command-line usage).
+*  Security concepts (understanding what open ports and services mean).
+
+This guide focuses only on using Nmap for network scanning. If you're unfamiliar with the above topics, you may want to review them first to get the most out of this guide.
+
+## What This Guide Covers:
 
 *  Understanding basic Nmap scanning techniques.
 *  Identifying open ports & running services.
@@ -23,11 +36,12 @@ Nmap offers many different types of scans that can be used to obtain various res
 *  Nmap – For scanning & enumeration.
 *  Parrot OS/Linux – The environment used for testing.
 *  HTB Academy – The learning platform followed for this project.
-*  StationX Nmap Cheat Sheet.
 
 ## Methodology:
 
 This section details the step-by-step approach for using Nmap.
+
+**Disclaimer**: This guide is intended for `educational and ethical purposes only`. Unauthorized scanning of networks or systems that you do not own or have explicit permission to test may be illegal and could result in serious consequences. Always ensure you have proper authorization before using Nmap.
 
 ### Syntax
 
