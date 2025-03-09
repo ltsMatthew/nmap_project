@@ -112,29 +112,67 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 
 ### Target Specification
 
-| Switch       | Example                       | Description               |
-|:-------------|:------------------------------|:--------------------------|
-|              | nmap 192.168.1.1 192.168.2.1  | Scan specific IPs         |
-|              | nmap 192.168.1.0/24           | Scan using CIDR notation  |
-|              | nmap 192.168.1.1-254          | Scan a range              |
-|              | nmap scanme.nmap.org          | Scan a domain             |
+| Option       | Example                      | Description               |
+|:-------------|:-----------------------------|:--------------------------|
+|              | nmap 192.168.1.1 192.168.2.1 | Scan specific IPs         |
+|              | nmap 192.168.1.0/24          | Scan using CIDR notation  |
+|              | nmap 192.168.1.1-254         | Scan a range              |
+|              | nmap scanme.nmap.org         | Scan a domain             |
 
 ### Scan Techniques
 
-| Switch       | Example              | Description                 |
-|:-------------|:---------------------|:----------------------------|
-| -sS          | nmap -sS 192.168.1.1 | TCP SYN port scan (Default) |
-| -sU          | nmap -sU 192.168.1.1 | UDP port scan               |
+| Option      | Example              | Description                 |
+|:------------|:---------------------|:----------------------------|
+| -sS         | nmap -sS 192.168.1.1 | TCP SYN port scan (Default) |
+| -sU         | nmap -sU 192.168.1.1 | UDP port scan               |
 
 ### Host Discovery
 
-| Switch       | Example                       | Description                                 |
-|:-------------|:------------------------------|:--------------------------------------------|
-| -sn          | nmap -sn 192.168.1.1/24       | Disable port scanning. Host discovery only. |
-|              | nmap -Pn 192.168.1.1-5        | Disable host discovery. Port scan only.     |
-| -PR          | nmap -PR 192.168.1.1-1/24     | ARP discovery on local network              |
-| -n           | nmap -n 192.168.1.1           | Never do DNS resolution                     |
-|              | nmap scanme.nmap.org          | Scan a domain                               |
+| Option      | Example                   | Description                                 |
+|:------------|:--------------------------|:--------------------------------------------|
+| -sn         | nmap -sn 192.168.1.1/24   | Disable port scanning. Host discovery only. |
+|             | nmap -Pn 192.168.1.1-5    | Disable host discovery. Port scan only.     |
+| -PR         | nmap -PR 192.168.1.1-1/24 | ARP discovery on local network              |
+| -n          | nmap -n 192.168.1.1       | Never do DNS resolution                     |
+|             | nmap scanme.nmap.org      | Scan a domain                               |
+
+### Port Specification
+
+| Option      | Example                    | Description                |
+|:------------|:---------------------------|:---------------------------|
+| -p          | nmap -p 21 192.168.1.1     | Port scan for port x       |
+| -p          | nmap -p 21-100 192.168.1.1 | Port range                 |
+| -p-         | nmap -p- 192.168.1.1       | Port scan all ports        |
+| -F          | nmap -F 192.168.1.1        | Fast port scan (100 ports) |
+
+### Service, OS & Version Detection
+
+| Option                  | Example                                    | Description                                                                |
+|:------------------------|:-------------------------------------------|:---------------------------------------------------------------------------|
+| -sV                     | nmap -sV 192.168.1.1                       | Attempts to determine the version of the service running on port           |
+| -sV --version-intensity | nmap -sV --version-intensity 8 192.168.1.1 | Intensity level 0 to 9. Higher number increases possibility of correctness |
+| -A                      | nmap -A 192.168.1.1                        | Enables OS detection, version detection, script scanning, and traceroute   |
+| -O                      | nmap -O 192.168.1.1                        | Remote OS detection using TCP/IP stack fingerprinting                      |
+| -O --max-os-tries       | nmap -O --max-os-tries 1 192.168.1.1       | Set the maximum number x of OS detection tries against a target            |
+
+### Timing and Performance
+
+| Option      | Example              | Description                                                                                |
+|:------------|:---------------------|:-------------------------------------------------------------------------------------------|
+| -T0         | nmap -T0 192.168.1.1 | Paranoid (0) Intrusion Detection System evasion                                            |
+| -T1         | nmap -T1 192.168.1.1 | Sneaky (1) Intrusion Detection System evasion                                              |
+| -T2         | nmap -T2 192.168.1.1 | Polite (2) slows down the scan to use less bandwidth and use less target machine resources |
+| -T3         | nmap -T3 192.168.1.1 | Normal (3) which is default speed                                                          |
+| -T4         | nmap -T4 192.168.1.1 | Aggressive (4) speeds scans; assumes you are on a reasonably fast and reliable network     |
+| -T5         | nmap -T5 192.168.1.1 | Insane (5) speeds scan; assumes you are on an extraordinarily fast network                 |
+
+### Output
+
+| Option      | Example                         | Description                                                       |
+|:------------|:--------------------------- ----|:------------------------------------------------------------------|
+| -oN         | nmap 192.168.1.1 -oN output.txt | Normal output to the file output.txt                              |
+| -v          | nmap -v 192.168.1.1             | Increase the verbosity level (use -vv or more for greater effect) |
+| -open       | nmap -open 192.168.1.1          | Only show open (or possibly open) ports                           |
 
 As stated before there are many more (complex) ways to use Nmap, this is just a beginners guide to get you a bit more familar with the tool and understand the basics of how to use Nmap.
 
@@ -145,4 +183,3 @@ HTB Nmap Course:
 
 Nmap Cheat Sheet:
 <a href="https://www.stationx.net/nmap-cheat-sheet/" target="_blank" rel="noopener noreferrer">StationX</a>
-
