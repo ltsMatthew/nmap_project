@@ -127,6 +127,7 @@ Additionally if you would like to check the version of the service running on a 
 > Purpose: The `-A` option combines multiple techniques, including OS detection, version detection, script scanning, and traceroute.
 
 These are just a few of the many many ways you can conduct a scan, The tables below includes more ways you can use Nmap:
+
 -
 ### Target Specification
 
@@ -206,6 +207,7 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 
 ---------------------------------------------------------------------------------------------------------------
 -
+
 Nmap is a powerful tool for network enumeration. Understanding its scan techniques is essential for cybersecurity and network troubleshooting. In this guide, I covered the fundamentals, but there’s always more to learn, especially about evasion techniques, scripting, and automation.
 
 HTB Nmap Free Course:
