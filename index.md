@@ -124,6 +124,7 @@ Additionally if you would like to check the version of the service running on a 
 > If this wasn't just a test machine and was within a prod environment it would be recommended to upgrade to a much newer Linux kernel version for proper security. 
 >
 > This is just one of the ways Nmap can assist in identifying these security risks which could either help in penetration testing  or security hardening!
+> 
 ---------------------------------------------------------------------------------------------------------------
 
 ### 4. Aggressive Scan (All-in-One)
