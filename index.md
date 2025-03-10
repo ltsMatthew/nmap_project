@@ -15,6 +15,8 @@ Some of the features of Nmap can be divided into the following scanning techniqu
 *  Service enumeration & detection
 *  OS detection
 
+---------------------------------------------------------------------------------------------------------------
+
 ## Prerequisites
 Before following this guide, you should have a basic understanding of:
 
@@ -32,6 +34,8 @@ _or_
 ```
 $ sudo apt-get install nmap
 ```
+---------------------------------------------------------------------------------------------------------------
+
 ## What This Guide Covers:
 
 *  Understanding basic Nmap scanning techniques.
