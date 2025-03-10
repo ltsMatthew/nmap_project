@@ -115,8 +115,15 @@ Additionally if you would like to check the version of the service running on a 
 
 ![NmapOSdetection](nmapOSdetection1.png)
 
-> Purpose: The `-O` option specifies the nmap command to determine the OS running on the target based on response fingerprints.
-
+> Purpose: The `-O` option specifies the Nmap command to determine the Operating System running on the target based on fingerprint analysis.
+>
+> From the response we can see that this machine is running Linux kernel 2.6.32.
+>
+> To note, Linux 2.6.32 is an outdated and unsupported kernel version with known security vulnerabilities.
+>
+> If this wasn't just a test machine and was within a prod environment it would be recommended to upgrade to a much newer Linux kernel version for proper security. 
+>
+> This is just one of the ways Nmap can assist in identifying these security risks which could either help in penetration testing  or security hardening!
 ---------------------------------------------------------------------------------------------------------------
 
 ### 4. Aggressive Scan (All-in-One)
