@@ -4,6 +4,8 @@ layout: default
 
 _Created by Matthew Adriaanzen_
 
+_This guide is based on my experience learning Nmap while studying network security. I used Parrot OS and HTB Academy to test scans safely. - see more below._
+
 Nmap is a network scanner created by Gordon Lyon. its used to discover hosts and services on a computer network by sending packets and analyzing the responses.
 
 It provides a number of features for probing computer networks, including host discovery and service and operating system detection.
@@ -174,12 +176,10 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 | -v          | nmap -v 192.168.1.1             | Increase the verbosity level (use -vv or more for greater effect) |
 | -open       | nmap -open 192.168.1.1          | Only show open (or possibly open) ports                           |
 
-As stated before there are many more (complex) ways to use Nmap, this is just a beginners guide to get you a bit more familar with the tool and understand the basics of how to use Nmap.
+_Nmap is a powerful tool for network enumeration. Understanding its scan techniques is essential for cybersecurity and network troubleshooting. In this guide, I covered the fundamentals, but there’s always more to learn, especially about evasion techniques, scripting, and automation._
 
-If you would like a more in depth guide to Nmap (which includes: Firewall/IDS/IPS Evasion, Host Discovery, NSE Scripts, etc...) I recommend checking the course on HackTheBox Academy, its completely free! Just sign up and you're ready to go!
-
-HTB Nmap Course:
+HTB Nmap Free Course:
 <a href="https://academy.hackthebox.com/course/preview/network-enumeration-with-nmap" target="_blank" rel="noopener noreferrer">HackTheBox</a>
 
-Nmap Cheat Sheet:
+Full Nmap Cheat Sheet:
 <a href="https://www.stationx.net/nmap-cheat-sheet/" target="_blank" rel="noopener noreferrer">StationX</a>
