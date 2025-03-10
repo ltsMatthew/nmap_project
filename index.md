@@ -127,7 +127,7 @@ Additionally if you would like to check the version of the service running on a 
 > Purpose: The `-A` option combines multiple techniques, including OS detection, version detection, script scanning, and traceroute.
 
 These are just a few of the many many ways you can conduct a scan, The tables below includes more ways you can use Nmap:
-
+-
 ### Target Specification
 
 | Option        | Example                         | Description                  |
@@ -138,7 +138,7 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 |               | nmap scanme.nmap.org            | Scan a domain                |
 
 ---------------------------------------------------------------------------------------------------------------
-
+-
 ### Scan Techniques
 
 | Option        | Example                         | Description                  |
@@ -147,7 +147,7 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 | -sU           | nmap -sU 192.168.1.1            | UDP port scan                |
 
 ---------------------------------------------------------------------------------------------------------------
-
+-
 ### Host Discovery
 
 | Option      | Example                          | Description                                 |
@@ -159,7 +159,7 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 |             | nmap scanme.nmap.org             | Scan a domain                               |
 
 ---------------------------------------------------------------------------------------------------------------
-
+-
 ### Port Specification
 
 | Option      | Example                          | Description                |
@@ -170,7 +170,7 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 | -F          | nmap -F 192.168.1.1              | Fast port scan (100 ports) |
 
 ---------------------------------------------------------------------------------------------------------------
-
+-
 ### Service, OS & Version Detection
 
 | Option                  | Example                                    | Description                                                                |
@@ -182,7 +182,7 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 | -O --max-os-tries       | nmap -O --max-os-tries 1 192.168.1.1       | Set the maximum number x of OS detection tries against a target            |
 
 ---------------------------------------------------------------------------------------------------------------
-
+-
 ### Timing and Performance
 
 | Option      | Example              | Description                                                                                |
@@ -195,7 +195,7 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 | -T5         | nmap -T5 192.168.1.1 | Insane (5) speeds scan; assumes you are on an extraordinarily fast network                 |
 
 ---------------------------------------------------------------------------------------------------------------
-
+-
 ### Output
 
 | Option      | Example                         | Description                                                       |
@@ -205,7 +205,7 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 | -open       | nmap -open 192.168.1.1          | Only show open (or possibly open) ports                           |
 
 ---------------------------------------------------------------------------------------------------------------
-
+-
 Nmap is a powerful tool for network enumeration. Understanding its scan techniques is essential for cybersecurity and network troubleshooting. In this guide, I covered the fundamentals, but there’s always more to learn, especially about evasion techniques, scripting, and automation.
 
 HTB Nmap Free Course:
