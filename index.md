@@ -208,9 +208,13 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 ---------------------------------------------------------------------------------------------------------------
 -
 
-Nmap is a powerful tool for network enumeration. Understanding its scan techniques is essential for cybersecurity and network troubleshooting. In this guide, I covered the fundamentals, but there’s always more to learn, especially about evasion techniques, scripting, and automation.
+Nmap is a powerful tool for network enumeration.
 
-HTB Nmap Free Course:
+Understanding its scan techniques is essential for cybersecurity and network troubleshooting.
+
+In this guide, I covered the fundamentals, but there’s always more to learn, especially about evasion techniques, scripting, and automation.
+
+HTB Nmap Full Free Course:
 <a href="https://academy.hackthebox.com/course/preview/network-enumeration-with-nmap" target="_blank" rel="noopener noreferrer">HackTheBox</a>
 
 Full Nmap Cheat Sheet:
