@@ -4,8 +4,6 @@ layout: default
 
 _Created by Matthew Adriaanzen_
 
-_This guide is based on my experience learning Nmap while studying network security. I used Parrot OS and HTB Academy to test scans safely. - see more below._
-
 Nmap is a network scanner created by Gordon Lyon. its used to discover hosts and services on a computer network by sending packets and analyzing the responses.
 
 It provides a number of features for probing computer networks, including host discovery and service and operating system detection.
@@ -46,6 +44,8 @@ $ sudo apt-get install nmap
 *  Nmap – For scanning & enumeration.
 *  Parrot OS/Linux – The environment used for testing.
 *  HTB Academy – The learning platform followed for this project.
+
+_I used Parrot OS and HTB Academy to test scans safely._
 
 ## Methodology:
 
