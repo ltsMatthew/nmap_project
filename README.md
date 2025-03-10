@@ -2,7 +2,7 @@
 
 This repository contains all the files used for my **Nmap Scanning with Nmap Guide**.  
 
-📖 Read the full guide here: [my_nmap_guide](https://ltsmatthew.github.io/Nmap_project/)
+📖 Read the full guide here: [my_nmap_guide](https://ltsmatthew.github.io/nmap_project/)
 
 ## Prerequisites
 Before following this guide, you should have a basic understanding of:
