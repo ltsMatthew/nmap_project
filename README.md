@@ -1,4 +1,6 @@
-# Nmap Guide  
+# My Journey with Nmap  
+
+_This guide is based on my experience learning Nmap while studying network security. I used Parrot OS and HTB Academy to test scans safely._
 
 This repository contains all the files used for my **Nmap Scanning with Nmap Guide**.  
 
