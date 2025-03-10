@@ -43,6 +43,8 @@ $ sudo apt-get install nmap
 *  Detecting vulnerabilities.
 *  Gaining insights into network reconnaissance.
 
+---------------------------------------------------------------------------------------------------------------
+
 ## Tools Used:
 
 *  Nmap – For scanning & enumeration.
@@ -50,6 +52,8 @@ $ sudo apt-get install nmap
 *  HTB Academy – The learning platform followed for this project.
 
 _I used Parrot OS and HTB Academy to test scans safely._
+
+---------------------------------------------------------------------------------------------------------------
 
 ## Methodology:
 
@@ -85,11 +89,15 @@ Here are some more examples on how you can use Nmap (take note of the command Sy
 
 (_Note: `localhost` refers to my own machine `127.0.0.1`. I'm testing these scans on my system to understand what information can be exposed about me. This is a good practice for security awareness. Additionally, HTB prohibits scanning external machines, so I'm only scanning my own._)
 
+---------------------------------------------------------------------------------------------------------------
+
 ### 1. Scanning for Open Ports
 
 ![NmapAllPortScan](nmapallportscan1.png)
 
 > Purpose: The `-p-` option scans all 65,535 ports to identify open ones. However in this case the results were the same as the pervious scan because only these 4 ports are opened.
+
+---------------------------------------------------------------------------------------------------------------
 
 ### 2. Service and Version Detection
 
@@ -101,11 +109,15 @@ Additionally if you would like to check the version of the service running on a 
 
 ![NmapServiceVersionDetectionSSH](nmapServiceVersionDetectionSSH1.png)
 
+---------------------------------------------------------------------------------------------------------------
+
 ### 3. Operating System Detection
 
 ![NmapOSdetection](nmapOSdetection1.png)
 
 > Purpose: The `-O` option specifies the nmap command to determine the OS running on the target based on response fingerprints.
+
+---------------------------------------------------------------------------------------------------------------
 
 ### 4. Aggressive Scan (All-in-One)
 
@@ -125,12 +137,16 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 |               | nmap 192.168.1.1-254            | Scan a range                 |
 |               | nmap scanme.nmap.org            | Scan a domain                |
 
+---------------------------------------------------------------------------------------------------------------
+
 ### Scan Techniques
 
 | Option        | Example                         | Description                  |
 |:--------------|:--------------------------------|:-----------------------------|
 | -sS           | nmap -sS 192.168.1.1            | TCP SYN port scan (Default)  |
 | -sU           | nmap -sU 192.168.1.1            | UDP port scan                |
+
+---------------------------------------------------------------------------------------------------------------
 
 ### Host Discovery
 
@@ -142,6 +158,8 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 | -n          | nmap -n 192.168.1.1              | Never do DNS resolution                     |
 |             | nmap scanme.nmap.org             | Scan a domain                               |
 
+---------------------------------------------------------------------------------------------------------------
+
 ### Port Specification
 
 | Option      | Example                          | Description                |
@@ -150,6 +168,8 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 | -p          | nmap -p 21-100 192.168.1.1       | Port range                 |
 | -p-         | nmap -p- 192.168.1.1             | Port scan all ports        |
 | -F          | nmap -F 192.168.1.1              | Fast port scan (100 ports) |
+
+---------------------------------------------------------------------------------------------------------------
 
 ### Service, OS & Version Detection
 
@@ -160,6 +180,8 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 | -A                      | nmap -A 192.168.1.1                        | Enables OS detection, version detection, script scanning, and traceroute   |
 | -O                      | nmap -O 192.168.1.1                        | Remote OS detection using TCP/IP stack fingerprinting                      |
 | -O --max-os-tries       | nmap -O --max-os-tries 1 192.168.1.1       | Set the maximum number x of OS detection tries against a target            |
+
+---------------------------------------------------------------------------------------------------------------
 
 ### Timing and Performance
 
@@ -172,6 +194,8 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 | -T4         | nmap -T4 192.168.1.1 | Aggressive (4) speeds scans; assumes you are on a reasonably fast and reliable network     |
 | -T5         | nmap -T5 192.168.1.1 | Insane (5) speeds scan; assumes you are on an extraordinarily fast network                 |
 
+---------------------------------------------------------------------------------------------------------------
+
 ### Output
 
 | Option      | Example                         | Description                                                       |
@@ -180,7 +204,9 @@ These are just a few of the many many ways you can conduct a scan, The tables be
 | -v          | nmap -v 192.168.1.1             | Increase the verbosity level (use -vv or more for greater effect) |
 | -open       | nmap -open 192.168.1.1          | Only show open (or possibly open) ports                           |
 
-_Nmap is a powerful tool for network enumeration. Understanding its scan techniques is essential for cybersecurity and network troubleshooting. In this guide, I covered the fundamentals, but there’s always more to learn, especially about evasion techniques, scripting, and automation._
+---------------------------------------------------------------------------------------------------------------
+
+Nmap is a powerful tool for network enumeration. Understanding its scan techniques is essential for cybersecurity and network troubleshooting. In this guide, I covered the fundamentals, but there’s always more to learn, especially about evasion techniques, scripting, and automation.
 
 HTB Nmap Free Course:
 <a href="https://academy.hackthebox.com/course/preview/network-enumeration-with-nmap" target="_blank" rel="noopener noreferrer">HackTheBox</a>
